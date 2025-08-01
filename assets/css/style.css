@@ -36,6 +36,25 @@ font-family: "Fustat", sans-serif;
         height: 40px;
     }
 
+    .custom-offcanvas {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.offcanvas-link {
+  display: block;
+  color: white;
+  padding: 12px 0;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: color 0.2s ease;
+}
+
+.offcanvas-link:hover {
+  color: #ff9d00;
+}
+
+
     .navbar-container {
       background-color: rgba(30, 30, 30, 0.8);
       backdrop-filter: blur(8px);

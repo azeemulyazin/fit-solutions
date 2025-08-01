@@ -40,15 +40,33 @@
 </div>
 
 <!-- ✅ Offcanvas -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+<div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasMenu">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Menu</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    <h5 class="offcanvas-title text-white">Menu</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <!-- Menu Links Here -->
+    <ul class="offcanvas-menu list-unstyled">
+      <li><a href="#" class="offcanvas-link">Home</a></li>
+      <li><a href="#" class="offcanvas-link">About</a></li>
+      
+      <li class="dropdown">
+        <a href="#" class="offcanvas-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#servicesDropdown" aria-expanded="false">Services</a>
+        <ul class="collapse list-unstyled ps-3" id="servicesDropdown">
+          <li><a href="#" class="offcanvas-link">Web Development</a></li>
+          <li><a href="#" class="offcanvas-link">Mobile App Development</a></li>
+          <li><a href="#" class="offcanvas-link">UI/UX Design</a></li>
+          <li><a href="#" class="offcanvas-link">Cloud Solutions</a></li>
+          <li><a href="#" class="offcanvas-link">IT Consulting</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" class="offcanvas-link">Portfolio</a></li>
+      <li><a href="#" class="offcanvas-link">Contact</a></li>
+    </ul>
   </div>
 </div>
+
 
 <!-- ✅ Hero Section -->
 <section class="banner d-flex flex-column justify-content-center align-items-center text-center">
