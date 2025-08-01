@@ -1,726 +1,807 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Curved Slider Hero</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curved Slider Hero</title>
 
-  <!-- Bootstrap & FontAwesome -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Bootstrap & FontAwesome -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-  <!-- Owl Carousel CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
 
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
-<!-- animation -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- animation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="assets/css/style.css">
-
- 
-</head>
-<body>
-
-<!-- Fixed Navbar -->
-<div class="container-fluid position-fixed top-0 start-0 end-0 py-3" style="z-index: 1000;">
-  <div class="container navbar-container d-flex justify-content-between align-items-center">
-    <div class="logo">
-      <img src="assets/img/logo.png" alt="Logo"  />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Fixed Navbar -->
+    <div
+      class="container-fluid position-fixed top-0 start-0 end-0 py-3"
+      style="z-index: 1000"
+    >
+      <div
+        class="container navbar-container d-flex justify-content-between align-items-center"
+      >
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="Logo" />
+        </div>
+        <div class="d-flex align-items-center gap-2 left-section">
+          <button
+            class="btn p-0 bg-transparent border-0"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu"
+            aria-label="Menu"
+          >
+            <img
+              src="assets/img/menu (2) 1.png"
+              alt="Menu"
+              width="18"
+              height="18"
+            />
+          </button>
+          <a href="#" class="gradient-border-btn">Request a Quote →</a>
+        </div>
+      </div>
     </div>
-    <div class="d-flex align-items-center gap-2 left-section">
-      <button class="btn p-0 bg-transparent border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-label="Menu">
-        <img src="assets/img/menu (2) 1.png" alt="Menu" width="18" height="18">
-      </button>
-      <a href="#" class="gradient-border-btn">Request a Quote →</a>
-    </div>
-  </div>
-</div>
 
-<!-- Offcanvas -->
-<div class="offcanvas offcanvas-end custom-offcanvas" tabindex="-1" id="offcanvasMenu">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title text-white">Menu</h5>
-    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <ul class="offcanvas-menu list-unstyled">
-      <li><a href="#" class="offcanvas-link">Home</a></li>
-      <li><a href="#" class="offcanvas-link">About</a></li>
-      
-      <li class="dropdown">
-        <a href="#" class="offcanvas-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#servicesDropdown" aria-expanded="false">Services</a>
-        <ul class="collapse list-unstyled ps-3" id="servicesDropdown">
-          <li><a href="#" class="offcanvas-link">Web Development</a></li>
-          <li><a href="#" class="offcanvas-link">Mobile App Development</a></li>
-          <li><a href="#" class="offcanvas-link">UI/UX Design</a></li>
-          <li><a href="#" class="offcanvas-link">Cloud Solutions</a></li>
-          <li><a href="#" class="offcanvas-link">IT Consulting</a></li>
+    <!-- Offcanvas -->
+    <div
+      class="offcanvas offcanvas-end custom-offcanvas"
+      tabindex="-1"
+      id="offcanvasMenu"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title text-white">Menu</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="offcanvas-menu list-unstyled">
+          <li><a href="#" class="offcanvas-link">Home</a></li>
+          <li><a href="#" class="offcanvas-link">About</a></li>
+
+          <li class="dropdown">
+            <a
+              href="#"
+              class="offcanvas-link dropdown-toggle"
+              data-bs-toggle="collapse"
+              data-bs-target="#servicesDropdown"
+              aria-expanded="false"
+              >Services</a
+            >
+            <ul class="collapse list-unstyled ps-3" id="servicesDropdown">
+              <li><a href="#" class="offcanvas-link">Web Development</a></li>
+              <li>
+                <a href="#" class="offcanvas-link">Mobile App Development</a>
+              </li>
+              <li><a href="#" class="offcanvas-link">UI/UX Design</a></li>
+              <li><a href="#" class="offcanvas-link">Cloud Solutions</a></li>
+              <li><a href="#" class="offcanvas-link">IT Consulting</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" class="offcanvas-link">Portfolio</a></li>
+          <li><a href="#" class="offcanvas-link">Contact</a></li>
         </ul>
-      </li>
-
-      <li><a href="#" class="offcanvas-link">Portfolio</a></li>
-      <li><a href="#" class="offcanvas-link">Contact</a></li>
-    </ul>
-  </div>
-</div>
-
-
-<!-- ✅ Hero Section -->
-<section class="banner d-flex flex-column justify-content-center align-items-center text-center">
-  <div class="container-fluid px-0 mt-5 pt-5">
-    <div class="container">
-         <h1 class="display-5 fw-bold text-white mb-3" data-aos="fade-up" data-aos-delay="200">
-      The <span class="text-gradient">Ultimate Digital</span> Experiences<br>In Bahrain
-    </h1>
-    <p class="lead text-white-50 mb-4" data-aos="fade-up" data-aos-delay="400">
-      As a leading software development company operating in Bahrain and India, we offer an array of services tailored to enhance your business.
- From securing your organization's endpoints to crafting effective digital marketing strategies that boost your brand,
-    </p>
-    <a href="#" class="gradient-border-btn" data-aos="fade-up" data-aos-delay="600">Start Explore →</a>
-    </div>
-   
-
-    <div class="my-carousel">
-  <div class="swiper my-carousel__swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="swiper-card swiper-card--1">
-          <img src="assets/img/slide-image.png" alt="Slide 1" />
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper-card swiper-card--2">
-          <img src="assets/img/slide-image.png" alt="Slide 2" />
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper-card swiper-card--3">
-          <img src="assets/img/slide-image.png" alt="Slide 3" />
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper-card swiper-card--4">
-          <img src="assets/img/slide-image.png" alt="Slide 4" />
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper-card swiper-card--5">
-          <img src="assets/img/slide-image.png" alt="Slide 5" />
-        </div>
       </div>
     </div>
-  </div>
-  <div class="background-section d-flex justify-content-center align-items-center ">
-  
-  <div class="animated-ring d-flex justify-content-center align-items-center">
-    <img src="assets/img/banner-bottom-img.png" alt="Center" class="center-image" >
-  </div>
-</div>
-</div>
 
-
-      
-    </div>
-
-  </section>
-
-  <!-- text-animation -->
-  <div class="slider-wrapper">
-  <div class="slider" id="slider">
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">UI/UX DESIGN</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">WEBSITE HOSTING</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">ODOO ERP</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">CYBER SECURITY</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">BRANDING AND DESIGN</div>
-
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">UI/UX DESIGN</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">WEBSITE HOSTING</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">ODOO ERP</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">CYBER SECURITY</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">BRANDING AND DESIGN</div>
-  </div>
-</div>
-
-<!-- features section -->
-<div class="container icon-section">
-  <div class="row justify-content-center">
-    <div class="col-lg-10">
-      <div class="row text-center">
-        <div class="col-md-4 mb-4 icon-box"  data-aos="flip-right" data-aos-delay="200">
-          <img src="assets/img/1.svg" alt="Design Icon">
-          <h5>Designs</h5>
-          <p>DESIGN THAT INNOVATES</p>
+    <!-- ✅ Hero Section -->
+    <section
+      class="banner d-flex flex-column justify-content-center align-items-center text-center"
+    >
+      <div class="container-fluid px-0 mt-5 pt-5">
+        <div class="container">
+          <h1
+            class="display-5 fw-bold text-white mb-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            The
+            <span class="text-gradient">Ultimate Digital</span>
+            Experiences<br />In Bahrain
+          </h1>
+          <p
+            class="lead text-white-50 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            As a leading software development company operating in Bahrain and
+            India, we offer an array of services tailored to enhance your
+            business. From securing your organization's endpoints to crafting
+            effective digital marketing strategies that boost your brand,
+          </p>
+          <a
+            href="#"
+            class="gradient-border-btn"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            >Start Explore →</a
+          >
         </div>
 
-        <div class="col-md-4 mb-4 icon-box"  data-aos="fade-up" data-aos-delay="200">
-          <img src="assets/img/2.png" alt="Words Icon">
-          <h5>Words</h5>
-          <p>We Bring Words To Life</p>
-        </div>
-
-        <div class="col-md-4 mb-4 icon-box"  data-aos="flip-left" data-aos-delay="200">
-          <img src="assets/img/3.svg" alt="Code Icon">
-          <h5>Codes</h5>
-          <p>We Code The Future</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- about section -->
-<div class="container-fluid p-0 about-section pb-5">
-<div class="container">
-  <div class="row align-items-center g-5">
-    <div class="col-lg-6 col-12">
-      <img src="assets/img/about-img.png" alt="About Image" class="about-image" data-aos="flip-left"  data-aos-delay="200" data-aos-duration="2000">
-    </div>
-
-    <div class="col-lg-6  col-12" >
-      <div class="d-flex align-items-center mb-3">
-  <small class="text-uppercase text-warning fw-semibold me-3 mb-0">ABOUT US</small>
-  <div class="gradient-line-inline "></div>
-</div>
-      <h2 class="about-heading">Software Development Company In Bahrain</h2>
-      <p class="about-paragraph">
-        As a leading software development company operating in Bahrain and India, we offer an array of services tailored to enhance your business. From securing your organization’s endpoints to crafting effective digital marketing strategies that boost your brand, we serve as the ideal IT solution you’ve been seeking.
-        <br><br>
-        While our primary focus is in Bahrain, we extend our services globally, welcoming clients from around the world. Backed by a team of industry-leading experts, we ensure professional handling of all entrusted projects.
-      </p>
-      <a href="#" class="gradient-border-btn">Explore More →</a>
-    </div>
-  </div>
-</div>
-</div>
-
-<!-- client-logo -->
-<div class="contaniner-fluid p-0 my-md-5 my-0 logo-section">
-  <div class="container my-md-5 my-0">
-    <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-lg-9 col-12">
-  <div class="logo-grid">
-    <div class="item custom-box dark">
-      <img src="assets/img/ten-logos/1.png" alt="Logo 1" class="img-fluid">
-    </div>
-    <div class="item custom-box light">
-      <img src="assets/img/ten-logos/2.png" alt="Logo 2" class="img-fluid">
-    </div>
-    <div class="item custom-box dark">
-      <img src="assets/img/ten-logos/3.png" alt="Logo 3" class="img-fluid">
-    </div>
-    <div class="item custom-box light">
-      <img src="assets/img/ten-logos/4.png" alt="Logo 4" class="img-fluid">
-    </div>
-    <div class="item custom-box dark">
-      <img src="assets/img/ten-logos/5.png" alt="Logo 5" class="img-fluid">
-    </div>
-    <div class="item custom-box light">
-      <img src="assets/img/ten-logos/3.png" alt="Logo 6" class="img-fluid">
-    </div>
-    <div class="item custom-box dark">
-      <img src="assets/img/ten-logos/4.png" alt="Logo 7" class="img-fluid">
-    </div>
-    <div class="item custom-box light">
-      <img src="assets/img/ten-logos/5.png" alt="Logo 8" class="img-fluid">
-    </div>
-    <div class="item custom-box dark">
-      <img src="assets/img/ten-logos/1.png" alt="Logo 9" class="img-fluid">
-    </div>
-    <div class="item custom-box light">
-      <img src="assets/img/ten-logos/2.png" alt="Logo 10" class="img-fluid">
-    </div>
-    </div>
-    </div>
-  </div>
-</div>
-
-</div>
-
-
-<!-- why-choose -->
-<section class="container-fluid main-section p-0 py-md-5">
-  <div class="container">
-        <div class="row why-choose  justify-content-center align-items-center">
-
-            <div class="col-lg-3 d-flex justify-content-center mb-4 mb-lg-0">
-                <div class="image-container">
-                    <img src="assets/img/why-choose-img.png" alt="Why Choose Us" class="slanted-image">
+        <div class="my-carousel">
+          <div class="swiper my-carousel__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-card swiper-card--1">
+                  <img src="assets/img/slide-image.png" alt="Slide 1" />
                 </div>
-            </div>
-
-            <div class="col-lg-4 content-section mb-4 mb-lg-0 ">
-                <h2 class="mb-4">Why Choose <span>Us ?</span></h2>
-                <p>Over a decade of experience with thousands of satisfied customers. Our agile teams are dedicated and skilled across different industries.</p>
-            </div>
-
-            <div class="col-lg-5 d-flex justify-content-center">
-        <div class="row counter-section">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 offset-md-3">
-                    <div class="info-box">
-                        <h3 class="count" data-count="1000">0+</h3>
-                        <p>HAPPY CUSTOMERS</p>
-                    </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card swiper-card--2">
+                  <img src="assets/img/slide-image.png" alt="Slide 2" />
                 </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6">
-                    <div class="info-box">
-                        <h3 class="count" data-count="16">0+</h3>
-                        <p>YEARS EXPERIENCE</p>
-                    </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card swiper-card--3">
+                  <img src="assets/img/slide-image.png" alt="Slide 3" />
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="info-box">
-                        <h3 class="count" data-count="300">0+</h3>
-                        <p>EMPLOYEES</p>
-                    </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card swiper-card--4">
+                  <img src="assets/img/slide-image.png" alt="Slide 4" />
                 </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-6 offset-md-3">
-                    <div class="info-box">
-                        <h3 class="count" data-count="8">0</h3>
-                        <p>BRANCHES</p>
-                    </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-card swiper-card--5">
+                  <img src="assets/img/slide-image.png" alt="Slide 5" />
                 </div>
+              </div>
             </div>
+          </div>
+          <div
+            class="background-section d-flex justify-content-center align-items-center"
+          >
+            <div
+              class="animated-ring d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="assets/img/banner-bottom-img.png"
+                alt="Center"
+                class="center-image"
+              />
+            </div>
+          </div>
         </div>
-    </div>
-        </div>
-        </div>
+      </div>
     </section>
 
-    <div class="full-width-banner">
-        </div>
-
-<!-- services section -->
-        <section class="services-main-section container-fluid pt-5">
-        <div class="container py-5">
-            <div class="row">
-
-              <div class=" col-lg-6 col-12">
-                <div class="left-col-sticky">
-      <div class="d-flex align-items-center mb-3">
-  <small class="text-uppercase text-warning fw-semibold me-3 mb-0">SERVICES</small>
-  <div class="gradient-line-inline "></div>
-</div>
-      <h2 class="about-heading">FIT SOLUTIONS Is
-                            A Design And Development
-                            Firm In Bahrain,</h2>
-      <p class="about-paragraph">
-        FIT SOLUTIONS is a design and development firm in Bahrain, with service partners in India. Our team consists of passionate designers and developers eager for new challenges.
-      </p>
-      <a href="#" class="gradient-border-btn" >Explore More →</a>
-    </div>
-    </div>
-                
-               
-
-                <div class="col-lg-6 col-12 right-col-scroll">
-                    <div class="service-main">
-                    <div class="service-card">
-                        <div class="card-inner-content">
-                            <div class="card-image-wrapper">
-                                <img src="assets/img/service-1.png" alt="Website Development">
-                            </div>
-                            <div class="card-text-content">
-                                <h3>Website Development</h3>
-                                <hr class="card-divider">
-                                <p>A website is often the first touch point between you and potential customers. We understand how vital it is to your brand.</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <a href="#" class="card-explore-btn">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-<div class="service-main">
-                    <div class="service-card">
-                        <div class="card-inner-content">
-                            <div class="card-image-wrapper">
-                                <img src="assets/img/service-2.png" alt="E-Commerce">
-                            </div>
-                            <div class="card-text-content">
-                                <h3>E-Commerce</h3>
-                                <hr class="card-divider">
-                                <p>eCommerce can assist businesses of all sizes to achieve their goals. Our team can provide eCommerce services ranging from determining what your company's goals are to making evaluations and recommendations.</p>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <a href="#" class="card-explore-btn">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-<div class="service-main">
-                    <div class="service-card">
-                        <div class="card-inner-content">
-                            <div class="card-image-wrapper">
-                                <img src="assets/img/service-3.png" alt="Mobile Application">
-                            </div>
-                            <div class="card-text-content">
-                                <h3>Mobile Application</h3>
-                                <hr class="card-divider">
-                                <p>Businesses are now widely adopting mobile applications to bring value to their customers. This enhances the efficiency of their operations, aiding them to provide greater customer satisfaction.</p>
-                            </div>
-                        </div>
-                       
-                    </div>
-                     <a href="#" class="card-explore-btn">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- text-animation -->
+    <!-- text-animation -->
     <div class="slider-wrapper">
-  <div class="slider" id="slider">
-    <!-- Repeated items (duplicated for infinite effect) -->
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">UI/UX DESIGN</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">WEBSITE HOSTING</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">ODOO ERP</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">CYBER SECURITY</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">BRANDING AND DESIGN</div>
+      <div class="slider" id="slider">
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />UI/UX DESIGN
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />WEBSITE HOSTING
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />ODOO ERP
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />CYBER SECURITY
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />BRANDING AND DESIGN
+        </div>
 
-    <!-- Duplicate for seamless loop -->
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">UI/UX DESIGN</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">WEBSITE HOSTING</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">ODOO ERP</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">CYBER SECURITY</div>
-    <div class="slide-item"><img src="assets/img/f-orange.png" alt="icon">BRANDING AND DESIGN</div>
-  </div>
-</div>
-
-
-<!-- tech section -->
-<section class="tech-section">
-  <div class="container">
-    <div class="d-flex align-items-center justify-content-center gap-2" data-aos="fade-up" data-aos-delay="200">
-  <span class="line"></span>
-  <div class="subtitle">TECHNOLOGIES</div>
-  <span class="line"></span>
-</div>
-    <h2 data-aos="fade-up" data-aos-delay="400">Incorporating Advanced Technologies.</h2>
-    <p data-aos="fade-up" data-aos-delay="600">
-      We offer a wide range of IT services and solutions in Bahrain to help you thrive in the digital era.
-      Let's merge our advanced technology and top-notch services for an exceptional customer experience.
-    </p>
-      <a href="#" class="gradient-border-btn"  data-aos="fade-up" data-aos-delay="800">Explore More →</a>
-
-    <div class="icon-wrapper" id="iconWrapper">
-      <!-- Center Icon -->
-      <div class="central-icon">
-        <img src="assets/img/tech-logos/main-logo.png" alt="Center">
-      </div>
-
-      <!-- 8 small rhombus icons -->
-      <div class="icon rhombus-small"><img src="assets/img/tech-logos/1.svg" alt="Tech"></div>
-      <div class="icon rhombus-small"><img src="assets/img/tech-logos/2.svg" alt="Tech"></div>
-      <div class="icon rhombus-small"><img src="assets/img/tech-logos/3.svg" alt="Tech"></div>
-      <div class="icon rhombus-small"><img src="assets/img/tech-logos/4.svg" alt="Tech"></div>
-      <div class="icon rhombus-small"><img src="assets/img/tech-logos/5.svg" alt="Tech"></div>
-      <div class="icon rhombus-small"><img src="assets/img/tech-logos/6.svg" alt="Tech"></div>
-      <div class="icon rhombus-small"><img src="assets/img/tech-logos/7.svg" alt="Tech"></div>
-      <div class="icon rhombus-small"><img src="assets/img/tech-logos/8.svg" alt="Tech"></div>
-
-      <!-- 12 big rhombus icons -->
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/9.svg" alt="Tech"></div>
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/10.svg" alt="Tech"></div>
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/11.svg" alt="Tech"></div>
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/12.svg" alt="Tech"></div>
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/13.svg" alt="Tech"></div>
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/14.svg" alt="Tech"></div>
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/15.svg" alt="Tech"></div>
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/16.svg" alt="Tech"></div>
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/17.svg" alt="Tech"></div>
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/18.svg" alt="Tech"></div>
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/1.svg" alt="Tech"></div>
-      <div class="icon rhombus-big"><img src="assets/img/tech-logos/2.svg" alt="Tech"></div>
-    </div>
-  </div>
-</section>
-
-
-<!-- footer -->
-<footer class="footer">
-
-  <div class="container">
-    
-    <div class="row align-items-center top-bar">
-      <div class="col-md-4 logo">
-        <img src="assets/img/logo.png" alt="Logo">
-        
-      </div>
-
-      <div class="col-md-5">
-        <h5>Ready To order Your Project ?</h5>
-        <a href="mailto:support@fridayinfotech.com">support@fridayinfotech.com</a>
-      </div>
-
-      <div class="col-md-3 text-md-end text-center">
-              <a href="#" class="gradient-border-btn" >Explore More →</a>
-
-      </div>
-    </div>
-
-    <div class="row mt-5 align-items-start justify-content-between">
-      
-      <div class="col-md-4 mb-4">
-        <p class="desc">
-          Cs simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-        </p>
-        <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-square"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />UI/UX DESIGN
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />WEBSITE HOSTING
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />ODOO ERP
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />CYBER SECURITY
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />BRANDING AND DESIGN
         </div>
       </div>
+    </div>
 
-      <div class="col-md-5 mb-4">
+    <!-- features section -->
+    <div class="container icon-section">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row text-center">
+            <div
+              class="col-md-4 mb-4 icon-box"
+              data-aos="flip-right"
+              data-aos-delay="200"
+            >
+              <img src="assets/img/1.svg" alt="Design Icon" />
+              <h5>Designs</h5>
+              <p>DESIGN THAT INNOVATES</p>
+            </div>
+
+            <div
+              class="col-md-4 mb-4 icon-box"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <img src="assets/img/2.png" alt="Words Icon" />
+              <h5>Words</h5>
+              <p>We Bring Words To Life</p>
+            </div>
+
+            <div
+              class="col-md-4 mb-4 icon-box"
+              data-aos="flip-left"
+              data-aos-delay="200"
+            >
+              <img src="assets/img/3.svg" alt="Code Icon" />
+              <h5>Codes</h5>
+              <p>We Code The Future</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div class="container-fluid p-0 about-section pb-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 col-12">
+            <img
+              src="assets/img/about-img.png"
+              alt="About Image"
+              class="about-image"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="2000"
+            />
+          </div>
+
+          <div class="col-lg-6 col-12">
+            <div class="d-flex align-items-center mb-3">
+              <small class="text-uppercase text-warning fw-semibold me-3 mb-0"
+                >ABOUT US</small
+              >
+              <div class="gradient-line-inline"></div>
+            </div>
+            <h2 class="about-heading">
+              Software Development Company In Bahrain
+            </h2>
+            <p class="about-paragraph">
+              As a leading software development company operating in Bahrain and
+              India, we offer an array of services tailored to enhance your
+              business. From securing your organization’s endpoints to crafting
+              effective digital marketing strategies that boost your brand, we
+              serve as the ideal IT solution you’ve been seeking.
+              <br /><br />
+              While our primary focus is in Bahrain, we extend our services
+              globally, welcoming clients from around the world. Backed by a
+              team of industry-leading experts, we ensure professional handling
+              of all entrusted projects.
+            </p>
+            <a href="#" class="gradient-border-btn">Explore More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- client-logo -->
+    <div class="contaniner-fluid p-0 my-md-5 my-0 logo-section">
+      <div class="container my-md-5 my-0">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-9 col-12">
+            <div class="logo-grid">
+              <div class="item custom-box dark">
+                <img
+                  src="assets/img/ten-logos/1.png"
+                  alt="Logo 1"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="item custom-box light">
+                <img
+                  src="assets/img/ten-logos/2.png"
+                  alt="Logo 2"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="item custom-box dark">
+                <img
+                  src="assets/img/ten-logos/3.png"
+                  alt="Logo 3"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="item custom-box light">
+                <img
+                  src="assets/img/ten-logos/4.png"
+                  alt="Logo 4"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="item custom-box dark">
+                <img
+                  src="assets/img/ten-logos/5.png"
+                  alt="Logo 5"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="item custom-box light">
+                <img
+                  src="assets/img/ten-logos/3.png"
+                  alt="Logo 6"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="item custom-box dark">
+                <img
+                  src="assets/img/ten-logos/4.png"
+                  alt="Logo 7"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="item custom-box light">
+                <img
+                  src="assets/img/ten-logos/5.png"
+                  alt="Logo 8"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="item custom-box dark">
+                <img
+                  src="assets/img/ten-logos/1.png"
+                  alt="Logo 9"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="item custom-box light">
+                <img
+                  src="assets/img/ten-logos/2.png"
+                  alt="Logo 10"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- why-choose -->
+    <section class="container-fluid main-section p-0 py-md-5">
+      <div class="container">
+        <div class="row why-choose justify-content-center align-items-center">
+          <div class="col-lg-3 d-flex justify-content-center mb-4 mb-lg-0">
+            <div class="image-container">
+              <img
+                src="assets/img/why-choose-img.png"
+                alt="Why Choose Us"
+                class="slanted-image"
+              />
+            </div>
+          </div>
+
+          <div class="col-lg-4 content-section mb-4 mb-lg-0">
+            <h2 class="mb-4">Why Choose <span>Us ?</span></h2>
+            <p>
+              Over a decade of experience with thousands of satisfied customers.
+              Our agile teams are dedicated and skilled across different
+              industries.
+            </p>
+          </div>
+
+          <div class="col-lg-5 d-flex justify-content-center">
+            <div class="row counter-section">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 offset-md-3">
+                  <div class="info-box">
+                    <h3 class="count" data-count="1000">0+</h3>
+                    <p>HAPPY CUSTOMERS</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6">
+                  <div class="info-box">
+                    <h3 class="count" data-count="16">0+</h3>
+                    <p>YEARS EXPERIENCE</p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="info-box">
+                    <h3 class="count" data-count="300">0+</h3>
+                    <p>EMPLOYEES</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-6 offset-md-3">
+                  <div class="info-box">
+                    <h3 class="count" data-count="8">0</h3>
+                    <p>BRANCHES</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="full-width-banner"></div>
+
+    <!-- services section -->
+    <section class="services-main-section container-fluid pt-5">
+      <div class="container py-5">
         <div class="row">
-          <div class="col-6">
-            <h6>Quick links</h6>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Contact us</a></li>
-            </ul>
+          <div class="col-lg-6 col-12">
+            <div class="left-col-sticky">
+              <div class="d-flex align-items-center mb-3">
+                <small class="text-uppercase text-warning fw-semibold me-3 mb-0"
+                  >SERVICES</small
+                >
+                <div class="gradient-line-inline"></div>
+              </div>
+              <h2 class="about-heading">
+                FIT SOLUTIONS Is A Design And Development Firm In Bahrain,
+              </h2>
+              <p class="about-paragraph">
+                FIT SOLUTIONS is a design and development firm in Bahrain, with
+                service partners in India. Our team consists of passionate
+                designers and developers eager for new challenges.
+              </p>
+              <a href="#" class="gradient-border-btn">Explore More →</a>
+            </div>
           </div>
-          <div class="col-6">
-            <h6>Services</h6>
-            <ul>
-              <li><a href="#">Website Development</a></li>
-              <li><a href="#">Odoo ERP</a></li>
-              <li><a href="#">Mobile Application</a></li>
-              <li><a href="#">Digital Marketing</a></li>
-              <li><a href="#">Email Hosting</a></li>
-              <li><a href="#">Manage Engine</a></li>
-            </ul>
+
+          <div class="col-lg-6 col-12 right-col-scroll">
+            <div class="service-main">
+              <div class="service-card">
+                <div class="card-inner-content">
+                  <div class="card-image-wrapper">
+                    <img
+                      src="assets/img/service-1.png"
+                      alt="Website Development"
+                    />
+                  </div>
+                  <div class="card-text-content">
+                    <h3>Website Development</h3>
+                    <hr class="card-divider" />
+                    <p>
+                      A website is often the first touch point between you and
+                      potential customers. We understand how vital it is to your
+                      brand.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="card-explore-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="service-main">
+              <div class="service-card">
+                <div class="card-inner-content">
+                  <div class="card-image-wrapper">
+                    <img src="assets/img/service-2.png" alt="E-Commerce" />
+                  </div>
+                  <div class="card-text-content">
+                    <h3>E-Commerce</h3>
+                    <hr class="card-divider" />
+                    <p>
+                      eCommerce can assist businesses of all sizes to achieve
+                      their goals. Our team can provide eCommerce services
+                      ranging from determining what your company's goals are to
+                      making evaluations and recommendations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="card-explore-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="service-main">
+              <div class="service-card">
+                <div class="card-inner-content">
+                  <div class="card-image-wrapper">
+                    <img
+                      src="assets/img/service-3.png"
+                      alt="Mobile Application"
+                    />
+                  </div>
+                  <div class="card-text-content">
+                    <h3>Mobile Application</h3>
+                    <hr class="card-divider" />
+                    <p>
+                      Businesses are now widely adopting mobile applications to
+                      bring value to their customers. This enhances the
+                      efficiency of their operations, aiding them to provide
+                      greater customer satisfaction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="card-explore-btn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- text-animation -->
+    <div class="slider-wrapper">
+      <div class="slider" id="slider">
+        <!-- Repeated items (duplicated for infinite effect) -->
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />UI/UX DESIGN
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />WEBSITE HOSTING
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />ODOO ERP
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />CYBER SECURITY
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />BRANDING AND DESIGN
+        </div>
+
+        <!-- Duplicate for seamless loop -->
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />UI/UX DESIGN
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />WEBSITE HOSTING
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />ODOO ERP
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />CYBER SECURITY
+        </div>
+        <div class="slide-item">
+          <img src="assets/img/f-orange.png" alt="icon" />BRANDING AND DESIGN
+        </div>
+      </div>
+    </div>
+
+    <!-- tech section -->
+    <section class="tech-section">
+      <div class="container">
+        <div
+          class="d-flex align-items-center justify-content-center gap-2"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <span class="line"></span>
+          <div class="subtitle">TECHNOLOGIES</div>
+          <span class="line"></span>
+        </div>
+        <h2 data-aos="fade-up" data-aos-delay="400">
+          Incorporating Advanced Technologies.
+        </h2>
+        <p data-aos="fade-up" data-aos-delay="600">
+          We offer a wide range of IT services and solutions in Bahrain to help
+          you thrive in the digital era. Let's merge our advanced technology and
+          top-notch services for an exceptional customer experience.
+        </p>
+        <a
+          href="#"
+          class="gradient-border-btn"
+          data-aos="fade-up"
+          data-aos-delay="800"
+          >Explore More →</a
+        >
+
+        <div class="icon-wrapper" id="iconWrapper">
+          <!-- Center Icon -->
+          <div class="central-icon">
+            <img src="assets/img/tech-logos/main-logo.png" alt="Center" />
+          </div>
+
+          <!-- 8 small rhombus icons -->
+          <div class="icon rhombus-small">
+            <img src="assets/img/tech-logos/1.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-small">
+            <img src="assets/img/tech-logos/2.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-small">
+            <img src="assets/img/tech-logos/3.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-small">
+            <img src="assets/img/tech-logos/4.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-small">
+            <img src="assets/img/tech-logos/5.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-small">
+            <img src="assets/img/tech-logos/6.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-small">
+            <img src="assets/img/tech-logos/7.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-small">
+            <img src="assets/img/tech-logos/8.svg" alt="Tech" />
+          </div>
+
+          <!-- 12 big rhombus icons -->
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/9.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/10.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/11.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/12.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/13.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/14.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/15.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/16.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/17.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/18.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/1.svg" alt="Tech" />
+          </div>
+          <div class="icon rhombus-big">
+            <img src="assets/img/tech-logos/2.svg" alt="Tech" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center top-bar">
+          <div class="col-md-4 logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </div>
+
+          <div class="col-md-5">
+            <h5>Ready To order Your Project ?</h5>
+            <a href="mailto:support@fridayinfotech.com"
+              >support@fridayinfotech.com</a
+            >
+          </div>
+
+          <div class="col-md-3 text-md-end text-center">
+            <a href="#" class="gradient-border-btn">Explore More →</a>
+          </div>
+        </div>
+
+        <div class="row mt-5 align-items-start justify-content-between">
+          <div class="col-md-4 mb-4">
+            <p class="desc">
+              Cs simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-5 mb-4">
+            <div class="row">
+              <div class="col-6">
+                <h6>Quick links</h6>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h6>Services</h6>
+                <ul>
+                  <li><a href="#">Website Development</a></li>
+                  <li><a href="#">Odoo ERP</a></li>
+                  <li><a href="#">Mobile Application</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">Email Hosting</a></li>
+                  <li><a href="#">Manage Engine</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 text-center mb-4">
+            <img src="assets/img/map.png" alt="Map" class="map-img" />
           </div>
         </div>
       </div>
 
-      <div class="col-md-3  text-center mb-4">
-        <img src="assets/img/map.png" alt="Map" class="map-img">
+      <div class="footer-bottom border-top mt-4 py-3">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div
+              class="col-md-5 col-lg-6 text-center text-md-start mb-2 mb-md-0"
+            >
+              <small>&copy; FIT SOLUTIONS 2025 / All rights reserved.</small>
+            </div>
+
+            <div class="col-md-7 col-lg-6 text-center text-md-end">
+              <a href="#" class="footer-link">Privacy Policy</a>
+              <span class="mx-2 text-white-50">|</span>
+              <a href="#" class="footer-link">Terms and Conditions</a>
+              <span class="mx-2 text-white-50">|</span>
+              <a href="#" class="footer-link">Sitemap</a>
+            </div>
+          </div>
+        </div>
       </div>
+    </footer>
 
-    </div>
-  </div>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+      <img src="assets/img/whatsapp.png" alt="" />
+    </a>
 
-  <div class="footer-bottom border-top mt-4 py-3">
-  <div class="container">
-    <div class="row justify-content-between align-items-center">
-      
-      <div class="col-md-5 col-lg-6 text-center text-md-start mb-2 mb-md-0">
-        <small>&copy; FIT SOLUTIONS 2025 / All rights reserved.</small>
-      </div>
-      
-      <div class="col-md-7 col-lg-6 text-center text-md-end">
-        <a href="#" class="footer-link">Privacy Policy</a>
-        <span class="mx-2 text-white-50">|</span>
-        <a href="#" class="footer-link">Terms and Conditions</a>
-        <span class="mx-2 text-white-50">|</span>
-        <a href="#" class="footer-link">Sitemap</a>
-      </div>
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
-    </div>
-  </div>
-</div>
-</footer>
-
-<!-- WhatsApp Button -->
-<a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn" >
-  <img src="assets/img/whatsapp.png" alt="">
-</a>
-
-
-<button id="backToTop" class="back-to-top" aria-label="Back to Top">
-  <i class="fas fa-arrow-up"></i>
-</button>
-
-
-
-
-
- 
-
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-<script>
-  var swiper = new Swiper(".my-carousel__swiper", {
-    loop: true,
-    grabCursor: true,
-    centeredSlides: true,
-    spaceBetween: 20,
-    effect: "creative",
-    creativeEffect: {
-      perspective: true,
-      limitProgress: 3,
-      prev: {
-        translate: ["-100%", "30%", -100],
-        rotate: [0, 0, -30],
-        origin: "bottom"
-      },
-      next: {
-        translate: ["100%", "30%", -100],
-        rotate: [0, 0, 30],
-        origin: "bottom"
-      }
-    },
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false
-    },
-
-    // 👇 Responsive breakpoints
-    breakpoints: {
-      0: { // Mobile
-        slidesPerView: 1,
-      },
-      640: { // Tablet (e.g. ≥640px)
-        slidesPerView: 2,
-      },
-      1024: { // Desktop (e.g. ≥1024px)
-        slidesPerView: 3,
-      }
-    }
-  });
-</script>
-
-<script>
-  function placeRhombus(selector, count, widthPercent, heightPercent) {
-    const wrapper = document.querySelector('.icon-wrapper');
-    const icons = document.querySelectorAll(selector);
-    const centerX = wrapper.offsetWidth / 2;
-    const centerY = wrapper.offsetHeight / 2;
-    const radiusX = (wrapper.offsetWidth / 2) * widthPercent;
-    const radiusY = (wrapper.offsetHeight / 2) * heightPercent;
-
-    icons.forEach((icon, i) => {
-      const angle = (i / count) * (2 * Math.PI);
-      const x = centerX + radiusX * Math.cos(angle) - icon.offsetWidth / 2;
-      const y = centerY + radiusY * Math.sin(angle) - icon.offsetHeight / 2;
-      icon.style.left = `${x}px`;
-      icon.style.top = `${y}px`;
-    });
-  }
-
-  function updateRhombusLayout() {
-    let smallWidth = 0.7;
-    let smallHeight = 0.4;
-    let bigWidth = 1.1;
-    let bigHeight = 0.8;
-
-    const screenWidth = window.innerWidth;
-
-    // Adjust values based on screen width
-    if (screenWidth < 576) {
-      // Extra small devices (phones)
-      smallWidth = 0.6;
-      smallHeight = 0.4;
-      bigWidth = 1;
-      bigHeight = 0.7;
-    } else if (screenWidth < 768) {
-      // Small devices (tablets)
-      smallWidth = 0.8;
-      smallHeight = 0.45;
-      bigWidth = .8;
-      bigHeight = 0.6;
-    }
-
-    placeRhombus(".rhombus-small", 8, smallWidth, smallHeight);
-    placeRhombus(".rhombus-big", 12, bigWidth, bigHeight);
-  }
-
-  window.addEventListener("DOMContentLoaded", updateRhombusLayout);
-  window.addEventListener("resize", updateRhombusLayout);
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // animation duration
-    once: true,     // whether animation should happen only once
-  });
-</script>
-
-<script>
-  const backToTopBtn = document.getElementById('backToTop');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTopBtn.classList.add('show');
-    } else {
-      backToTopBtn.classList.remove('show');
-    }
-  });
-
-  backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>
-
-<script>
-  function animateCounter(el, target, duration = 2000) {
-    let start = 0;
-    let startTime = null;
-
-    function step(timestamp) {
-      if (!startTime) startTime = timestamp;
-      const progress = timestamp - startTime;
-      const value = Math.min(Math.floor(progress / duration * target), target);
-      el.innerText = value;
-
-      if (value < target) {
-        requestAnimationFrame(step);
-      }
-    }
-
-    requestAnimationFrame(step);
-  }
-
-  function runCounters() {
-    const counters = document.querySelectorAll('.count');
-    counters.forEach(counter => {
-      const target = parseInt(counter.getAttribute('data-count'), 10);
-      animateCounter(counter, target);
-    });
-  }
-
-  // Trigger only when the section is visible
-  let triggered = false;
-  window.addEventListener('scroll', () => {
-    const section = document.querySelector('.counter-section');
-    const sectionTop = section.getBoundingClientRect().top;
-    const screenHeight = window.innerHeight;
-
-    if (!triggered && sectionTop < screenHeight - 100) {
-      triggered = true;
-      runCounters();
-    }
-  });
-</script>
-
-
-
-
-
-
-
-</body>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
