@@ -959,5 +959,8 @@ clip-path: polygon(100% 0, 0 100%, 100% 100%);        }
     
     margin:  0;
 }
+body{
+  overflow-x: hidden !important;
+}
 }
 
