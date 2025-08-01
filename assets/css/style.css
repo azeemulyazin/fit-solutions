@@ -773,6 +773,50 @@ clip-path: polygon(100% 0, 0 100%, 100% 100%);        }
   text-decoration: underline;
 }
 
+/* Shared styles */
+.back-to-top, .whatsapp-btn {
+  position: fixed;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  text-align: center;
+      width: 50px;
+    height: 50px;
+}
+
+
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  bottom: 110px;
+  visibility: visible;
+  opacity: 1 !important;
+}
+.whatsapp-btn img{
+      width: 50px;
+    height: 50px;
+}
+/* Back to Top Button */
+.back-to-top {
+  bottom: 40px;
+  background-color: #da9c0e;
+  color: #fff;
+  padding: 14px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Show buttons on scroll */
+.back-to-top.show{
+  opacity: 1;
+  visibility: visible;
+}
+
         /* Responsive adjustments */
         /* @media (max-width: 991px) {
             .services-main-section {
@@ -821,12 +865,30 @@ clip-path: polygon(100% 0, 0 100%, 100% 100%);        }
                 flex-direction: column;
                 text-align: center;
             }
-            .content-section, .info-box-container {
-                margin-top: 40px;
+            .content-section {
+                margin-top: 70px;
             }
             .image-container {
                 width: 70%;
             }
+
+            .background-section {
+    
+    height: 200px;
+}
+  .main-section .why-choose {
+    margin-top: 50px;
+}
+
+.main-section{
+  background: none;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+   
+}
            
         }
 
